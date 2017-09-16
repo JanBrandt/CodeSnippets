@@ -4,14 +4,18 @@
  */
 
 public class Robot {
-  Movement fortbewegung;
+  Bewegung fortbewegung;
 
-  public Robot(Movement move) {
-    this.fortbewegung = move;
+  public Robot(Bewegung bewegung) {
+    this.fortbewegung = bewegung;
   }
 
   public void bewegen() {
     fortbewegung.ausfuehren();
+  }
+
+  public void setBewegung(Bewegung bewegung) {
+    this.fortbewegung = bewegung;
   }
 }
 
